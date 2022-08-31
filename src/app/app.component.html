@@ -1,0 +1,20 @@
+<div  style="border:2px solid black;text-align:center">
+<h4>app container</h4>
+<input #input type="text"><button (click) = "inputEvent(input.value)">update</button>
+<div style="display:flex;margin:10px">
+<div style="margin:10px">
+  <p>Array</p>
+  <ul>
+  <li *ngFor="let x of addToArray">{{x}}</li>
+</ul>
+</div>
+<div style="margin:10px">
+  <p>object</p>
+  <p>{{addToObject.name ?? "null"}}</p>
+</div>
+</div>
+<div style="display:flex">
+<app-left-container [addToObject] = "addToObject" [addToArray] = "addToArray"  style="margin:20px"></app-left-container>
+<app-right-container [addToObject] = "addToObject" [addToArray] = "addToArray" style="margin:20px"></app-right-container>
+</div>
+</div>

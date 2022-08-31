@@ -1,0 +1,19 @@
+<div style="border:2px solid black;text-align:center">
+<h4>right container(default)</h4>
+<div style="display:flex;margin:10px">
+<div style="margin:10px">
+  <p>Array</p>
+  <ul>
+  <li *ngFor="let x of addToArray">{{x}}</li>
+</ul>
+</div>
+<div style="margin:10px">
+  <p>object</p>
+  <p>{{addToObject?.name ?? "null"}}</p>
+</div>
+</div>
+<div style="display:flex">
+  <app-right-left [addToObject] = "addToObject" [addToArray] = "addToArray"  style="margin:20px"></app-right-left>
+  <app-right-right [addToObject] = "addToObject" [addToArray] = "addToArray"  style="margin:20px"></app-right-right>
+</div>
+</div>

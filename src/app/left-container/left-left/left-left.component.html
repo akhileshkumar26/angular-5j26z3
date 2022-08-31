@@ -1,0 +1,15 @@
+<div  style="border:2px solid black;padding:10px">
+<h4>left left container</h4>
+<div style="display:flex;margin:10px">
+<div style="margin:10px">
+  <p>Array</p>
+  <ul>
+  <li *ngFor="let x of addToArray">{{x}}</li>
+</ul>
+</div>
+<div style="margin:10px">
+  <p>object</p>
+  <p>{{addToObject?.name ?? "null"}}</p>
+</div>
+</div>
+</div>
